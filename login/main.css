@@ -1,0 +1,99 @@
+/* Confiture */
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  height: 100vh;
+  display: flex;
+  background-image: linear-gradient(245deg, #b59afe, #f5bdfd);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/* Title */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+p, span, strong {
+  font-weight: 200;
+}
+/* MainCSS */
+.container {
+  width: 100%;
+  background-color: white;
+  margin: 40px;
+}
+.container .cover {
+  position: relative;
+  background: url('./bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+@media only screen and (max-width:850px) {
+  .container .cover {
+    height: 150px;
+  }
+}
+@media only screen and (min-width:850px) {
+  .container {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .container .cover {
+    height: 100%;
+    width: 60%;
+  }
+  .container .main {
+    transform: translate(0, -500px);
+    float: right;
+    left: 20px;
+    width: 40%;
+    right: 20px;
+  }
+}
+.lr {
+  transform: translateX(50px);
+}
+.container .main {
+  display: flex;
+  justify content:center;
+  margin: 20px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+/* Input Style */
+input {
+  background: none;
+}
+.container .login .input {
+  position: relative;
+  padding: 8px;
+}
+.container .login .input .text {
+  transform: translate(0, 30px);
+  border: none;
+  border-bottom: 2px solid #66ccff;
+  outline: none;
+  width: 90%;
+  font-size: 20px;
+  padding: 3px;
+}
+.container .login .btn {
+  transform: translate(0, 30px);
+  border: none;
+  width: 70%;
+  border-radius: 50px;
+  font-size: 20px;
+  background-image: linear-gradient(45deg, #fa64e6, #ff32cc);
+  padding: 10px;
+  color: white;
+}
